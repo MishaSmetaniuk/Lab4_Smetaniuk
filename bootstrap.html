@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/bootassets.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://webtechcnu.github.io/Lab3_Smetaniuk/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://webtechcnu.github.io/Lab3_Smetaniuk/tickets.html">Tickets</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Exhibits
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://webtechcnu.github.io/Lab3_Smetaniuk/exhibits.html#Luxury">Luxury</a></li>
+                  <li><a class="dropdown-item" href="https://webtechcnu.github.io/Lab3_Smetaniuk/exhibits.html#Classic">Classic</a></li>
+                  <li><a class="dropdown-item" href="https://webtechcnu.github.io/Lab3_Smetaniuk/exhibits.html#Sports">Sports</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h4>Buy tickets for the AutoFest!</h4>
+        <div class="d-flex justify-content-center">
+            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Click HERE to buy</button>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <fieldset class="mb-3">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="First name" required>
+                        <fieldset class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>
+                        </fieldset>
+                        <fieldset class="mb-3">
+                            <label for="quantity">Number of Tickets</label>
+                            <select id="quantity" name="quantity" class="form-select" required>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-primary" type="submit" name="submit">Purchase</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="mb-4">Our Feedbacks!</h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+              Read our reviews!
+            </p>
+          </div>
+        </div>
+      
+        <div class="row text-center d-flex align-items-stretch">
+          <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #9d789b;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">Maria Smantha</h4>
+                <hr />
+                <p class="dark-grey-text mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  AutoFest mesmerized with a seamless mix of classic and contemporary cars, each telling a unique story. The attention to detail showcased the organizers' commitment to an immersive experience, leaving enthusiasts in awe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #7a81a8;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">Lisa Cudrow</h4>
+                <hr />
+                <p class="dark-grey-text mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  AutoFest transcended the typical car show, offering a day of family-friendly fun. Interactive displays, face painting, and a mini racetrack delighted children, while diverse food trucks added to the festive atmosphere, creating lasting memories for all.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0 d-flex align-items-stretch">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #6d5b98;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                  class="rounded-circle img-fluid" />
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4">John Smith</h4>
+                <hr />
+                <p class="dark-grey-text mt-4">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  AutoFest was a technological marvel, spotlighting the automotive industry's cutting-edge innovations. From electric models to futuristic concepts, the event provided a glimpse into the future of transportation, balancing tradition and innovation for a captivating experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="back-to-top" onclick="scrollToTop(1000);">
+        <img src="assets/img/arrow_up.png" alt="Go to top">
+    </div>
+    
+    
+    <script src="scripts/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

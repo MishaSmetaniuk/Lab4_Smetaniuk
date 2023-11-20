@@ -1,0 +1,63 @@
+:root {
+    --background-color: #333; /* Dark gray for the background */
+    --container-background: #444; /* Slightly lighter gray for containers */
+    --font-color: #fff; /* White for text */
+    --nav-font-color: #ff0000; /* Red for navigation text */
+}
+
+body {
+    background-color: var(--container-background);
+    color: var(--font-color);
+}
+
+.container-fluid {
+    background-color: var(--background-color) !important;
+
+}
+
+.container-fluid a {
+    color: var(--nav-font-color) !important;
+}
+
+.dropdown-menu {
+    background-color: #4a4747;
+}
+
+.btn {
+    color: var(--font-color);
+}
+
+.logo {
+    max-width: 80px;
+}
+
+.modal-content,
+.card-body {
+    color: var(--background-color);
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  #back-to-top img {
+    width: 50px;
+    height: 50px;
+  }
